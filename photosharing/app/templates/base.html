@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{ title }} - photo sharing</title>
+    {% else %}
+    <title>Welcome to photo sharing</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>Photo Sharing: <a href="/index">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
